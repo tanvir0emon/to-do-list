@@ -54,6 +54,10 @@ function check(id) {
 }
 
 function trash(id) {
+	if(todoId.value == id){
+		return;
+	}
+	
 	document.getElementById(id).remove();
 }
 
