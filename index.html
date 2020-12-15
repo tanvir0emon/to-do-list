@@ -10,7 +10,7 @@
 	<script src="https://kit.fontawesome.com/416af33500.js" crossorigin="anonymous"></script>
 	<title>Toto App</title>
 	<style>
-		.checked{
+		.todo.checked .todo-text{
 			text-decoration: line-through;
 			color: #585858;
 			font-style: italic;
@@ -25,6 +25,7 @@
 		</div>
 		<div class="row form">
 			<div class="input-group mb-3">
+				<input type="hidden" class="id" value="">
 				<input type="text" class="form-control item-input" placeholder="Add Item..." value="">
 				<button class="input-group-text enter" id="basic-addon2" style="cursor: pointer;">Enter</button>
 			</div>
@@ -35,14 +36,14 @@
 
 		<div class="row item-list">
 			<!-- single item -->
-			<div class="d-flex justify-content-between border p-2">
+			<!-- <div class="d-flex justify-content-between border p-2">
 				<div class="checked">To do this task</div>
 				<div>
 					<span class="check text-success"  role="button"><i class="fas fa-check-circle"></i></span>
 					<span class="check text-info mx-3"  role="button"><i class="fas fa-edit"></i></span>
 					<span class="check text-danger"  role="button"><i class="fas fa-trash"></i></span>
 				</div>
-			</div>
+			</div> -->
 			<!-- end single item -->
 		</div>
 	</div>
